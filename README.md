@@ -18,25 +18,50 @@ Create a virtualenv and activate it
 
 ## Steps to Replicate 
 
-1. Fork or create this repository and create a codespace in GitHub.
+1. Fork or create this repository in GitHub
    ```
-   git clone https://github.com/sudarshan-koirala/langchain-falcon-chainlit.git
-   cd langchain-falcon-chainlit
+   git clone https://github.com/oldbright22/falcon-main.git
    ```
 
-2. Rename example.env to .env with `cp example.env .env` and input the huggingfacehub api token as follows. 
+2. From your GitHub, select new repository created, inside click GREEN button <> Code and 
+select CODESPACES tab, and click on create codespace from your (main or master branch).
+
+
+3. Add huggingfacehub api token to .env as follows:  ALSO might be prompted so keep it around. 
 Get Huggingfacehub api token from this [URL](https://huggingface.co/settings/tokens). 
 You need to create an account in Huggingface if you haven't already.
    ```
    HUGGINGFACEHUB_API_TOKEN=your_huggingface_token
    ```
+Expected result = your own API
 
-3. Run the following command in the terminal to install necessary python packages:
+4. Install Python Extension:
+From LEFT menu where all the BIG icons -- drill down into the Extensions icon
+Search/Install Python extension
+
+Expected result:  Python extension installed
+
+5. Create/Install Kernel server:
+From LEFT menu where all the BIG icons -- drill down into Explorer icon 
+Then click on the 1st Jupyter notebook "langchain_falcon_V1.." this will bring the jupyter notebook active 
+Look at the TOP RIGHT section and you will see a drop down for SELECT KERNEL.
+Click on it and --- and you will 1st time, see install JUPYTER and this will install additonal extensions
+
+Expected result: ALL required jupyter extensions installed  +  ensure that you can now select this environment in kernel drop down.
+
+6. Having above JUPYTER notebook open, go the mid of the page -- and look for TERMINAL section
+Run below commands in the terminal 
+
    ```
+   #Create your environment and activate it.
+   python3 -m venv .venv && source .venv/bin/activate
+
+   #Install some required libraries.
    pip install -r requirements.txt
    ```
 
-4. Run the following command in your terminal to start the chat UI:
+#### NOT REQUIRED JUST YET
+#7. Run the following command in your terminal to start the chat UI:
    ```
    chainlit run langchain_falcon.py --no-cache -w
    ```
