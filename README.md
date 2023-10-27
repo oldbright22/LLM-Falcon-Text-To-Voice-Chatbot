@@ -7,16 +7,8 @@ Simple Chat UI using Falcon model, LangChain and Chainlit
 - [Falcon model](https://huggingface.co/tiiuae/falcon-7b-instruct) from Huggingface Website
 - [Chainlit](https://docs.chainlit.io/langchain) for deploying.
 
-## System Requirements
 
-You must have Python 3.10 or later installed. Earlier versions of python may not compile.
-
-Create a virtualenv and activate it
-   ```
-   python3 -m venv .venv && source .venv/bin/activate
-   ```
-
-## Steps to Replicate 
+## STEPS TO REPLICATE 
 
 1. Fork or create this repository in GitHub
    ```
@@ -49,18 +41,24 @@ Click on it and --- and you will 1st time, see install JUPYTER and this will ins
 
 Expected result: ALL required jupyter extensions installed  +  ensure that you can now select this environment in kernel drop down.
 
+## SYSTEM REQUIREMENTS
+
 6. Having above JUPYTER notebook open, go the mid of the page -- and look for TERMINAL section
 Run below commands in the terminal 
 
-   ```
-   #Create your environment and activate it.
-   python3 -m venv .venv && source .venv/bin/activate
+You must have Python 3.10 or later installed. 
 
-   #Install some required libraries.
+Create a virtualenv and activate it
+   ```
+   python3 -m venv .venv && source .venv/bin/activate
+   ```
+
+Install some required libraries.
+   ```  
    pip install -r requirements.txt
    ```
 
-#### NOT REQUIRED JUST YET
+## NOT REQUIRED JUST YET
 #7. Run the following command in your terminal to start the chat UI:
    ```
    chainlit run langchain_falcon.py --no-cache -w
