@@ -28,10 +28,8 @@ Simple Chat UI using Falcon model, LangChain and Chainlit
 
 3. Add huggingfacehub api token to .env as follows:  
 
-Keep API Token around since you will be asked to enter it when running jupyter notebook.
- 
-
-   ```
+   Keep API Token around since you will be asked to enter it when running jupyter notebook.
+    ```
    Get Huggingfacehub api token from this [URL].(https://huggingface.co/settings/tokens)
    <You need to create an account in Huggingface if you haven't already.>
 
@@ -68,16 +66,16 @@ From LEFT menu where all the BIG icons -- drill down into Explorer icon
 ## SYSTEM REQUIREMENTS
 
 6. Having above JUPYTER notebook open, go the mid of the page -- and look for TERMINAL section
-Run below commands in the terminal 
+   Run below commands in the terminal 
 
-You must have Python 3.10 or later installed. 
+   You must have Python 3.10 or later installed. 
 
-Create a virtualenv and activate it
+   Create a virtualenv and activate it
    ```
    python3 -m venv .venv && source .venv/bin/activate
    ```
 
-Install some required libraries.
+   Install some required libraries.
    ```  
    pip install -r requirements.txt
    ```
