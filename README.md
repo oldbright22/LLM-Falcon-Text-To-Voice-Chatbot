@@ -10,9 +10,11 @@ Simple Chat UI using Falcon model, LangChain and Chainlit
 
 ## STEPS TO REPLICATE 
 
-1. Fork or create this repository in GitHub
+1. Fork or create this repository in your GitHub
    ```
    git clone https://github.com/oldbright22/falcon-main.git
+
+   Expected result: A new repository in your GitHub got created
    ```
 
 2. From your GitHub, select new repository created 
@@ -20,13 +22,23 @@ Simple Chat UI using Falcon model, LangChain and Chainlit
    click GREEN button <> Code  
    select CODESPACES tab
          --> click on create codespace from your (main or master branch).
+
+   Expected result: In a new browser window your OWN codespace was created      
    ```
 
-3. Add huggingfacehub api token to .env as follows:  ALSO might be prompted so keep it around. 
-Get Huggingfacehub api token from this [URL](https://huggingface.co/settings/tokens). 
-You need to create an account in Huggingface if you haven't already.
+3. Add huggingfacehub api token to .env as follows:  
+
+Keep API Token around since you will be asked to enter it when running jupyter notebook.
+ 
+
    ```
+   Get Huggingfacehub api token from this [URL].(https://huggingface.co/settings/tokens)
+   <You need to create an account in Huggingface if you haven't already.>
+
+   From EXPLORER, look at  .env file, open it and update below variable with your NEW token.
    HUGGINGFACEHUB_API_TOKEN=your_own_huggingface_token
+
+   Expected result: New Token created and stored in .env file as expected.
    ```
 
 4. Install Python Extension:
